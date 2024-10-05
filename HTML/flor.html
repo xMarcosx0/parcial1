@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florista</title>
+    <link rel="stylesheet" href="../CSS/flor.css">
+    <link rel="stylesheet" href="../CSS/logout.css">
+</head>
+
+<body>
+    <header>
+        <div class="welcome-message" id="welcomeMessage"></div>
+        <h1>Gojo's GreenHouse</h1>
+        <h2>Florista</h2>
+        <button onclick="logout()" id="logout">Cerrar sesión</button>
+    </header>
+
+    <div class="Menuh">
+        <b onclick="showOption(1)">Nuestro Florista Ideal</b>
+        <b onclick="showOption(2)">Arreglos Florales</b>
+        <b onclick="showOption(3)">Calendario</b>
+    </div>
+
+    <div class="content">
+        <div class="items" id="option1">
+            <h3>Perfil del Florista Ideal</h3>
+            <div class="imagen1" style="text-align: center;">
+                <img src="../IMG/invIndex1.jpeg" alt="no se encontro imagen" title="El cielo azul" width="400px" height="250px">
+            </div>
+            <div class="recomendacion">
+                <p><b>Habilidades:</b> Un florista ideal debe tener un profundo conocimiento de las diferentes especies de plantas y flores, así como de sus requerimientos de cuidado. Debe ser capaz de identificar las necesidades específicas de cada planta y ofrecer soluciones adecuadas.</p>
+        
+                <p><b>Creatividad:</b> La creatividad es esencial para diseñar arreglos florales atractivos y originales. Un buen florista sabe cómo combinar colores, texturas y formas para crear composiciones visualmente impactantes.</p>
+        
+                <p><b>Atención al cliente:</b> La capacidad de escuchar y entender las necesidades de los clientes es fundamental. Un florista ideal debe ofrecer un excelente servicio al cliente, brindando asesoramiento y recomendaciones personalizadas.</p>
+        
+                <p><b>Conocimiento del mercado:</b> Estar al tanto de las tendencias actuales en floristería y del mercado local ayuda a un florista a ofrecer productos que sean atractivos y relevantes para su clientela.</p>
+        
+                <p><b>Habilidades organizativas:</b> Un florista debe ser capaz de gestionar su tiempo y sus recursos de manera eficiente, especialmente durante temporadas altas como el Día de San Valentín o el Día de la Madre.</p>
+        
+                <p><b>Pasión por las plantas:</b> Finalmente, un florista ideal tiene una verdadera pasión por las plantas y la naturaleza, lo que se traduce en un compromiso genuino por ofrecer lo mejor a sus clientes.</p>
+            </div>
+        
+            <div id="datos"></div>
+        </div>
+        
+
+        <div class="items" id="option2" style="display:none;">
+            <h2>Agregar Arreglo Floral</h2>
+            <div class="flex-container">
+                <form id="floralForm" class="styled-form">
+                    <div>
+                        <label for="nombre">Nombre del arreglo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="color">Color predominante:</label>
+                        <input type="text" id="color" name="color" required>
+                    </div>
+                    <div>
+                        <label for="precio">Precio:</label>
+                        <input type="number" id="precio" name="precio" required>
+                    </div>
+                    <div>
+                        <label for="stock">Cantidad disponible:</label>
+                        <input type="number" id="stock" name="stock" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Agregar arreglo floral</button>
+                </form>
+                
+                <div class="pedido-bandeja">
+                    <h3>Arreglos en Stock</h3>
+                    <div id="pedidosBandeja">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+
+        <div class="items" id="option3" style="display:none;">
+
+            <h2>Calendario de Eventos Florales</h2>
+            <table id="eventosTabla" border="1" style="margin: 0 auto;">
+                <thead>
+                    <tr>
+                        <th>Evento</th>
+                        <th>Fecha</th>
+                        <th>Ubicación</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los datos -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="pie">
+        <b>Emily Mercado</b> <br>
+        <b>Marcos Márquez</b> <br>
+        <b>Miguel Molinates</b>
+    </div>
+    <script src="../JS/flor.js"></script>
+
+    <script src="../JS/logout.js"></script>
+</body>
+
+</html>

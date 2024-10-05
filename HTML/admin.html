@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gojo's GreenHouse</title>
+    <link rel="stylesheet" href="../CSS/admin.css">
+    <link rel="stylesheet" href="../CSS/logout.css">
+</head>
+
+<body>
+    <header>
+        <div class="welcome-message" id="welcomeMessage">Bienvenido, usuario</div>
+        <h1>Gojo's GreenHouse</h1>
+        <h2>Administrador</h2>
+        <button onclick="logout()" id="logout">Cerrar sesión</button>
+    </header>
+
+    <!-- Menú -->
+    <div class="Menuh">
+        <b onclick="showOption(1)">Gestion de Plantas</b>
+        <b onclick="showOption(2)">Control de Inventario</b>
+        <!-- <b onclick="showOption(3)">Opcion 3</b> -->
+    </div>
+
+    <!-- Secciones -->
+    <div class="content">
+        <!-- Opción 1: Menú Principal -->
+        <div class="items" id="option1">
+            <!-- <p>Gestion de Plantas</p> -->
+            <h2>Gestión de Plantas</h2>
+
+            <form id="formP">
+                <label for="id_planta">ID Planta:</label><br>
+                <input type="text" id="id_planta" name="id_planta" placeholder="Ej: 001"><br><br>
+
+                <label for="nombre">Nombre de la Planta:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Orquídea"><br><br>
+
+                <label for="categoria">Categoría:</label><br>
+                <select id="categoria" name="categoria">
+                    <option value="flores">Flores</option>
+                    <option value="suculentas">Suculentas</option>
+                    <option value="plantas_decorativas">Plantas Decorativas</option>
+                    <option value="hierbas">Hierbas</option>
+                </select><br><br>
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad">
+                <label for="estado">Estado de Crecimiento:</label><br>
+                <input type="radio" id="semilla" name="estado" value="semilla">
+                <label for="semilla">Semilla</label><br>
+
+                <input type="radio" id="brote" name="estado" value="brote">
+                <label for="brote">Brote</label><br>
+
+                <input type="radio" id="madura" name="estado" value="madura">
+                <label for="madura">Madura</label><br><br>
+
+                <label for="cuidados">Cuidados:</label><br>
+                <textarea id="cuidados" name="cuidados" rows="4" cols="50"
+                    placeholder="Describe los cuidados necesarios"></textarea><br><br>
+
+                <button type="submit">Guardar Planta</button>
+            </form>
+            <div id="datos">
+
+            </div>
+        </div>
+
+        <!-- Opción 2: Nuestras Plantas -->
+        <div class="items" id="option2" style="display:none;">
+            <div class="contedorop2">
+                <table id="inventario">
+                    <thead>
+                        <tr>
+                            <th>ID Planta</th>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>Cantidad Disponible</th>
+                            <th>Stock Mínimo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inventarioTabla">
+                    </tbody>
+                </table>
+                <h3>Actualizar Inventario</h3>
+                <form id="actualizarInventarioForm">
+                    <label for="plantaID">ID de Planta:</label>
+                    <input type="text" id="plantaID" name="plantaID" required><br>
+
+                    <label for="nuevaCantidad">Nueva Cantidad:</label>
+                    <input type="number" id="nuevaCantidad" name="nuevaCantidad" required><br>
+
+                    <button type="submit">Actualizar Cantidad</button>
+                    <div id="resultado">
+
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+        <!-- Opción 3: Contactanos -->
+        <div class="items" id="option3" style="display:none;">
+            <p>opcion 3</p>
+        </div>
+
+
+        <!-- Pie de página -->
+        <div class="pie">
+            <b>Emily Mercado</b> <br>
+            <b>Marcos Márquez</b> <br>
+            <b>Miguel Molinates</b>
+        </div>
+
+        <script src="../JS/admin.js"></script>
+        <script src="../JS/logout.js"></script>
+</body>
+
+</html>

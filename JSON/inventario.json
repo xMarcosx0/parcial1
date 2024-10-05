@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "Rosa",
+    "categoria": "Flor",
+    "cantidadDisponible": 15,
+    "stockMinimo": 5
+  },
+  {
+    "id": 2,
+    "nombre": "Cactus",
+    "categoria": "Suculenta",
+    "cantidadDisponible": 8,
+    "stockMinimo": 3
+  },
+  {
+    "id": 3,
+    "nombre": "Orquídea",
+    "categoria": "Ornamental",
+    "cantidadDisponible": 5,
+    "stockMinimo": 2
+  },
+  {
+    "id": 4,
+    "nombre": "Lavanda",
+    "categoria": "Flor",
+    "cantidadDisponible": 12,
+    "stockMinimo": 4
+  },
+  {
+    "id": 5,
+    "nombre": "Savia de Aloe",
+    "categoria": "Suculenta",
+    "cantidadDisponible": 20,
+    "stockMinimo": 10
+  },
+  {
+    "id": 6,
+    "nombre": "Ficus",
+    "categoria": "Ornamental",
+    "cantidadDisponible": 7,
+    "stockMinimo": 3
+  }
+]

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gojo's Invernadero</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gojo's GreenHouse</h1>
+    </header>
+    <div class="Menuh">
+        <b href="#" onclick="showOption(1)">Menú principal</b>
+        <b href="#" onclick="showOption(2)">¡Encuentranos!</b>
+        <b href="#" onclick="showOption(3)">Iniciar Sesión</b>
+    </div>
+
+    <div class="content">
+        <!-- Menu Principal -->
+        <div class="items" id="option1">
+            <div class="parrafo-container">
+                <div class="parrafo-content">
+                    <div class="imagen1" style="text-align: center;">
+                        <img src="IMG/backphoto1.jpg" alt="no se encontro imagen" title="El cielo azul" width="400px" height="250px">
+                    </div>
+                    <b>¡Bienvenidos a Gojo's GreenHouse!</b>
+                    <p>
+                        Estamos encantados de tenerte aquí en nuestro pequeño paraíso de la naturaleza. En Gojo's GreenHouse, cultivamos una amplia variedad de plantas, desde las más exóticas hasta las más comunes, todas cuidadas con amor y dedicación. Nuestro objetivo es ofrecerte un espacio donde puedas disfrutar de la belleza de la flora, aprender sobre el cuidado de las plantas y encontrar inspiración para tu propio jardín.
+                    </p>
+                    <p>
+                        Ya seas un jardinero experimentado o alguien que apenas comienza su viaje en el mundo de las plantas, te invitamos a explorar nuestra selección, participar en nuestros talleres y disfrutar de un ambiente lleno de vida y color. ¡Gracias por visitarnos y esperamos que encuentres todo lo que buscas!
+                    </p>
+                        
+                </div>
+                <div>
+                    <table id="tabla"></table>
+                </div>
+            </div>
+        </div>
+        <!-- Mapa -->
+        <div class="items" id="option2" style="display:none;">
+            <div class="mapa">
+                <marquee behavior="scroll" direction="left"><b>¡Ven a visitarnos en nuestra sede!</b></marquee>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15668.547353852548!2d-74.7959612!3d10.9530345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef5d35f5ec99df9%3A0x6880343565b2ae02!2sInvernadero%20P%C3%BAblico%20Jard%C3%ADn%20Bot%C3%A1nico!5e0!3m2!1ses-419!2sco!4v1727369579441!5m2!1ses-419!2sco"width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            </div>
+        </div>
+       
+        <!-- Iniciar Sesión -->
+        <div class="items" id="option3" style="display:none;">  
+            <form id="loginForm">
+                <h1 class="titulo">Login</h1>
+                <label for="username">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="username" name="username" placeholder="Usuario" required>
+                </label>
+            
+                <label for="password">
+                  <i class="fa-solid fa-lock"></i>
+                  <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </label>
+            
+                <button type="submit" id="submit">Ingresar</button>
+              </form>
+          </div>
+    </div>
+
+    <div class="pie"> 
+        <b>Emily Mercado</b> <br>
+        <b>Marcos Márquez</b> <br>
+        <b>Miguel Molinates</b> 
+    </div>
+
+    <script src="JS/index.js"></script>
+</body>
+</html>

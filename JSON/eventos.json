@@ -1,0 +1,20 @@
+[
+    {
+        "evento": "Feria de las Rosas",
+        "fecha": "2024-10-05",
+        "ubicacion": "Parque Central",
+        "descripcion": "Exposición de rosas de todas partes del mundo."
+    },
+    {
+        "evento": "Festival de los Tulipanes",
+        "fecha": "2024-11-12",
+        "ubicacion": "Jardín Botánico",
+        "descripcion": "Muestra de tulipanes de diferentes colores y tamaños."
+    },
+    {
+        "evento": "Concurso de Orquídeas",
+        "fecha": "2024-12-20",
+        "ubicacion": "Museo de Botánica",
+        "descripcion": "Competencia de las mejores orquídeas en diversas categorías."
+    }
+]

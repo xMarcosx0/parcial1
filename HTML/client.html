@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gojo's GreenHouse</title>
+    <link rel="stylesheet" href="../CSS/cliente.css">
+    <link rel="stylesheet" href="../CSS/logout.css">
+</head>
+
+<body>
+    <header>
+        <div class="welcome-message" id="welcomeMessage">Bienvenido, usuario</div>
+        <h1>Gojo's GreenHouse</h1>
+        <h2>Cliente</h2>
+        <button onclick="logout()" id="logout">Cerrar sesión</button>
+    </header>
+
+    <!-- Menú -->
+    <div class="Menuh">
+        <b onclick="showOption(1)">Menú Principal</b>
+        <b onclick="showOption(2)">Nuestras Plantas</b>
+        <b onclick="showOption(3)">Contáctanos</b>
+    </div>
+
+    <!-- Secciones -->
+    <!-- Secciones -->
+<div class="items" id="option1">
+    <h2>Bienvenido a Gojo's GreenHouse</h2>
+    <p>Explora nuestras maravillosas plantas y descubre cómo traer más vida a tu hogar.</p>
+    <div id="productos" class="productos">
+        
+    </div>
+</div>
+
+
+    <!-- Opción 2: Nuestras Plantas -->
+    <div class="items" id="option2" style="display:none;">
+        <h2>Plantas en el Invernadero</h2>
+        <table id="plantsTable" border="1">
+            <thead>
+                <tr>
+                    <th>Nombre de Planta</th>
+                    <th>Color</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se cargará la tabla de plantas -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Opción 3: Contáctanos -->
+    <div class="items" id="option3" style="display:none;">
+        <h2>Contáctanos</h2>
+        <marquee behavior="scroll" direction="left">
+            <p>Puedes encontrarnos en la esquina de la calle verde con el jardín principal. ¡Te esperamos!</p>
+        </marquee>
+        <div class="contenedor-form">
+            <form id="contactForm" class="contact-form frm">
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" placeholder="Escriba su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="number" id="phone" name="phone" placeholder="Ingrese su número de teléfono">
+                </div>
+                <div class="form-group">
+                    <label for="category">Tipo de consulta</label>
+                    <select id="category" name="category">
+                        <option value="pedido">Consulta sobre un pedido</option>
+                        <option value="soporte">Soporte técnico</option>
+                        <option value="general">Consulta general</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferencia de contacto</label>
+                    <label>
+                        <input type="radio" name="contactMethod" value="email"> Correo electrónico
+                    </label>
+                    <label>
+                        <input type="radio" name="contactMethod" value="telefono" id="contacto"> Teléfono
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Escriba su mensaje aquí..."></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+            <div class="datos" id="datos"></div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?..." width="100%" height="100%" style="border:0;"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="pie">
+        <b>Emily Mercado</b> <br>
+        <b>Marcos Márquez</b> <br>
+        <b>Miguel Molinates</b>
+    </div>
+
+    <script src="../JS/cliente.js"></script>
+    <script src="../JS/logout.js"></script>
+</body>
+
+</html>

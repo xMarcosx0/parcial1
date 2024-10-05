@@ -1,0 +1,7 @@
+[
+    { "nombre": "Lavanda", "color": "Morado", "precio": 5.50 },
+    { "nombre": "Rosa", "color": "Rojo", "precio": 7.00 },
+    { "nombre": "Orquídea", "color": "Blanco", "precio": 15.00 },
+    { "nombre": "Cactus", "color": "Verde", "precio": 3.75 },
+    { "nombre": "Hortensia", "color": "Azul", "precio": 9.00 }
+]

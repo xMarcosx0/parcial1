@@ -1,0 +1,45 @@
+{
+  "flores": [
+    {
+      "id": 1,
+      "nombre": "Rosa",
+      "color": "Rojo",
+      "precio": 2.5,
+      "stock": 150,
+      "imagen": "/tallerweb/IMG/rosa2.jpg"
+      
+    },
+    {
+      "id": 2,
+      "nombre": "Tulipán",
+      "color": "Amarillo",
+      "precio": 1.8,
+      "stock": 200,
+      "imagen": "/tallerweb/IMG/images.jpeg"
+    },
+    {
+      "id": 3,
+      "nombre": "Girasol",
+      "color": "Amarillo",
+      "precio": 1.5,
+      "stock": 180,
+      "imagen": "/tallerweb/IMG/girasol.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Orquídea",
+      "color": "Blanco",
+      "precio": 3.2,
+      "stock": 75,
+      "imagen": "/tallerweb/IMG/orquidea.jpeg"
+    },
+    {
+      "id": 5,
+      "nombre": "Lirio",
+      "color": "Naranja",
+      "precio": 2.0,
+      "stock": 120,
+      "imagen": "/tallerweb/IMG/lirio.jpg"
+    }
+  ]
+}

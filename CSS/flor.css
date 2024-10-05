@@ -1,0 +1,130 @@
+body {
+    background-color: #F2E9E4; /* Color de fondo */
+    font-family: Arial;        /* Tipo de letra */
+    margin: 0;
+}
+
+header {
+    text-align: center; /* Centrados */
+    background-color: #013440;
+    color: #659AA6;
+    padding: 1%;
+}
+
+.Menuh {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0c6872;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.Menuh b {
+    color: #013440;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Menuh b:hover {
+    background-color: #659AA6;
+    color: white;
+}
+
+.content {
+    text-align: center; /* Centramos todo el contenido */
+    padding: 20px;
+}
+
+.welcome-message {
+    position: absolute;
+    left: 10px; /* Ajusta según tu preferencia */
+    top: 30px; /* Ajusta según tu preferencia */
+    color: #fff; /* Color del texto */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Flex container para formulario y bandeja de pedidos */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.styled-form {
+    background-color: #FFFFFF;
+    border: 2px solid #659AA6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%; /* Tamaño adecuado para dejar espacio a la bandeja */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.styled-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.styled-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #013440;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0c6872;
+}
+
+/* Bandeja de pedidos */
+.pedido-bandeja {
+    background-color: #F2E9E4;
+    border: 2px solid #659AA6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pedido-bandeja h3 {
+    color: #013440;
+    margin-bottom: 15px;
+}
+
+.pedido-bandeja ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pedido-bandeja li {
+    background-color: #FFFFFF;
+    border: 1px solid #659AA6;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+.pie { 
+    text-align: center; /* centrado */
+    background-color: #013440;
+    color: #659AA6;
+    padding: 10px;
+}
